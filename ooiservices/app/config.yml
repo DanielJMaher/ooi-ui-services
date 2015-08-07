@@ -12,8 +12,8 @@ COMMON: &common
     HOST: localhost
     PORT: 4000
     JSONIFY_PRETTYPRINT_REGULAR: true
-    UFRAME_URL: 'http://localhost:12575'
-    UFRAME_ASSETS_URL: 'http://localhost:12573'
+    UFRAME_URL: 'http://uframe-dev.ooi.rutgers.edu:12576'
+    UFRAME_ASSETS_URL: 'http://uframe-dev.ooi.rutgers.edu:12573'
     UFRAME_URL_BASE: '/sensor/inv'
     UFRAME_TOC: '/sensor/inv/toc'
     UFRAME_INST_URL: 'http://localhost:12572'
@@ -31,6 +31,7 @@ COMMON: &common
     DEPLOYMENT_SCENARIO: LOCAL_DEVELOPMENT
     UFRAME_DATA_REQUEST_LIMIT: 2880
     GOOGLE_ANALYTICS_URL: 'https://www.google-analytics.com/collect?v=1&tid=UA-50606390-3&cid=1&t=event'
+    DATA_POINTS: 1000
 
 DEVELOPMENT: &development
     <<: *common
